@@ -21,15 +21,21 @@ p {
 
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  column-gap: 5em;
+  background-color: rgb(32, 32, 32);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 button {
   border-style: none;
   border-radius: 10px;
-  margin-bottom: 2em;
   padding: .5em 1em;
   font-size: 1rem;
   color: white;
@@ -42,12 +48,10 @@ button {
   grid-template-columns: repeat(16, auto);
   aspect-ratio: 1 / 1;
   width: 40%;
-  border-top: 1px gray solid;
-  border-left: 1px gray solid;
+  border: 5px rgb(44, 44, 44) solid;
+  background-color: white;
 }
 
 .square {
-  border-bottom: 1px gray solid;
-  border-right: 1px gray solid;
   box-sizing: border-box;
 }
