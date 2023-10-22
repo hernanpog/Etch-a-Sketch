@@ -1,0 +1,53 @@
+*,
+*::before
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-style: none;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  padding: .5em 1em;
+  font-size: 1rem;
+  color: white;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, auto);
+  aspect-ratio: 1 / 1;
+  width: 40%;
+  border-top: 1px gray solid;
+  border-left: 1px gray solid;
+}
+
+.square {
+  border-bottom: 1px gray solid;
+  border-right: 1px gray solid;
+  box-sizing: border-box;
+}
